@@ -15,6 +15,13 @@
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </div>
+
+  <div class="field">
+    <%= f.fields_for(@place) do |builder| %>
+      <%= render "placefields", :f => builder %>
+    <% end %>
+  </div>
+
   <div class="field">
     <%= f.label :date %><br />
     <%= f.date_select :date %>

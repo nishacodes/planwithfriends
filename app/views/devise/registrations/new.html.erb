@@ -12,6 +12,13 @@
   <div><%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %></div>
 
+  <%# debugger %>
+  <%# if @event %>
+      <%#= f.fields_for(@event) do |builder| %>
+        <%#= render "events/form", :f => builder %>
+      <%# end %>
+  <%# end %> 
+
   <div><%= f.submit "Sign up" %></div>
 <% end %>
 

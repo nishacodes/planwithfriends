@@ -1,7 +1,8 @@
 Planwithfriends::Application.routes.draw do
 
   resources :events
-  devise_for :users
+  devise_for :users,
+             :controllers => { :registrations => "my_devise/registrations"}
 
   root :to => 'events#new'
 

@@ -1,24 +1,8 @@
-<p id="notice"><%= notice %></p>
+<!-- <p id="notice"><%= notice %></p> -->
 
-<p>
-  <b>Name:</b>
-  <%= @event.name %>
-</p>
+<h1><%= @days %> days until  <%= @event.name %></h1>
 
-<p>
-  <b>Date:</b>
-  <%= @event.date %>
-</p>
-
-<p>
-  <b>User:</b>
-  <%= @event.user_id %>
-</p>
-
-<p>
-  <b>Url:</b>
-  <%= @event.url %>
-</p>
+<%= @event.date %>
 
 
 <%= link_to 'Edit', edit_event_path(@event) %> |

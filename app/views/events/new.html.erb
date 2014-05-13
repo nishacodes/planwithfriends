@@ -1,5 +1,23 @@
 <h1>Where are you going next?</h1>
+<!-- <div id="map-canvas" ></div> -->
+<%#= javascript_include_tag "googleplace" %>
 
-<%= render 'form' %>
 
 <%= link_to 'Back', events_path %>
+
+  
+<input id="pac-input" class="controls" type="text"
+    placeholder="Enter a location">
+<div id="type-selector" class="controls">
+  <input type="radio" name="type" id="changetype-all" checked="checked">
+  <label for="changetype-all">All</label>
+
+  <input type="radio" name="type" id="changetype-establishment">
+  <label for="changetype-establishment">Establishments</label>
+
+  <input type="radio" name="type" id="changetype-geocode">
+  <label for="changetype-geocode">Geocodes</label>
+</div>
+<div id="map-canvas"></div>
+
+<%= render 'form' %>

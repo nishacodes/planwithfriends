@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.18'
 gem 'jquery-rails'
-gem 'devise'
+gem 'devise', '3.0'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

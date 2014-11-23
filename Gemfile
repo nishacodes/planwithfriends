@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 # ruby '2.0.0' # required for heroku
 
-gem 'rails', '3.2.18'
+gem 'rails', '3.2.16'
 gem 'jquery-rails'
 gem 'devise'
 
